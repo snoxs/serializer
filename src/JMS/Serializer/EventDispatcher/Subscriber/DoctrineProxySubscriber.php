@@ -53,7 +53,7 @@ class DoctrineProxySubscriber implements EventSubscriberInterface
             return;
         }
 
-        $object->__load();
+        //$object->__load();
 
         if ( ! $virtualType) {
             $event->setType(get_parent_class($object));
